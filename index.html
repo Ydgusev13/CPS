@@ -7,105 +7,99 @@
 	<link rel="stylesheet" href="fonts/TTLakes/stylesheet.css">
 	<link rel="stylesheet" href="style.css">
 </head>
-<body>
-	<div class="wrapper">
+<body class="body">
 
-		<div class="header">
-			<div class="burger header-block">
-				<img class="burger__item" src="icons/icon_burger.svg" alt="Кнопка вызова меню">
+		<header class="body__header header header--hidden-1120">
+         
+         <div class="button">
+				<input class="button__burger" type="image" name="button__burger" src="icons/icon_burger.svg" alt="Кнопка вызова меню">
 			</div>
-
-			<div class="divider header-block">
-				<img class="divider__item" src="icons/icon_divider.svg" alt="Разделитель меню" >
+			<div class="divider divider--hidden-320">
+				<img class="divider__img" src="icons/icon_divider.svg" alt="Разделитель меню" >
 			</div>
-
-			<div class="logo header-block">
-				<img class="logo__item" src="logo/logo_main.svg" alt="Логотип">
+			<div class="header__logo logo">
+				<img class="logo__img" src="logo/logo_main.svg" alt="Логотип">
 			</div>
-
-			<div class="call header-block">
-				<img class="call__item" src="icons/icon_call.svg" alt="Кнока-позвонить">
+			<div class="button button--hidden-320">
+				<input class="button__call" type="image" name="button__call" src="icons/icon_call.svg" alt="Кнока-позвонить">
 			</div>	
-			<div class="chat header-block">
-				<img class="chat__item" src="icons/icon_chat.svg" alt="Кнопка начать чат" >
+			<div class="button button--hidden-320">
+				<input class="button__chat" type="image" name="button__chat" src="icons/icon_chat.svg" alt="Кнопка начать чат" >
 			</div>	
-         <div class="profile header-block">
-         	<img class="profile__item" src="icons/icon_profile.svg" alt="Кнопка войти в профиль">
+         <div class="button button--hidden-320">
+         	<input class="button__profile" type="image" name="button__profile" src="icons/icon_profile.svg" alt="Кнопка войти в профиль">
          </div>
-
-			<div class="divider header-block">
-				<img class="divider__item" src="icons/icon_divider.svg" alt="Разделитель меню" >
+			<div class="divider">
+				<img class="divider__img" src="icons/icon_divider.svg" alt="Разделитель меню" >
 			</div>
-			<div class="repair header-block">
-				<img class="repair__button " src="icons/icon_repair.svg" alt="Подать заявку на ремонт">
+			<div class="button">
+				<input class="button__repair" type="image" name="button__repair" src="icons/icon_repair.svg" alt="Подать заявку на ремонт">
 			</div>
-				<div class="check-status header-block">
-					<img class="check-status__button" src="icons/icon_check-status.svg" alt="Проверить статус ремонта">
-				</div>
-		</div>
+			<div class="button">
+				<input class="button__check-status" type="image" name="button__check-status" src="icons/icon_check-status.svg" alt="Проверить статус ремонта">
+			</div>
 
-		<div class="title">
-			<h1 class="title__item">
+		</header>
+
+		<div class="body__title title">
+
+			<h1 class="title__h1">
 				Услуги и сервисы
 		   </h1>
 
-			<div class="repair block--hidden-320-768">
-				<label class="repair__text" for="repair">Оставить заявку</label>
-				<input class="repair__button " type="image" name="repair__button" id="repair" src="icons/icon_repair.svg" alt="Подать заявку на ремонт">
+			<div class="title__button button button--hidden-320-768">
+				<label class="button__label" for="button__repair">Оставить заявку</label>
+				<input class="button__input" type="image" name="button__repair" id="button__repair" src="icons/icon_repair.svg" alt="Подать заявку на ремонт">
 			</div>
-			<div class="check-status block--hidden-320-768">
-				
-				<label class="check-status__text" for="check-status">Статус ремонта</label>
-				<input class="check-status__button" type="image" name="check-status" id="check-status" src="icons/icon_check-status.svg" alt="Проверить статус ремонта">
 
+			<div class="title__button button button--hidden-320-768">				
+				<label class="button__label" for="button__check-status">Статус ремонта</label>
+				<input class="button__input" type="image" name="button__check-status" id="button__check-status" src="icons/icon_check-status.svg" alt="Проверить статус ремонта">
 			</div>
 
 		</div>
 
-		<nav class="main-nav">
-			<ul class="main-nav-ul">
-				<li class="main-nav-ul__item"><a href="#">Ремонтируемые бренды</a></li>
-				<li class="main-nav-ul__item"><a href="#">Ремонтируемые устройства</a></li>
-				<li class="main-nav-ul__item"><a href="#">Цены на услуги</a></li>
-				<li class="main-nav-ul__item"><a href="#">Адреса сервисных центров</a></li>
-				<li class="main-nav-ul__item"><a href="#">Специальные цены</a></li>
-				<li class="main-nav-ul__item"><a href="#">Отзывы</a></li>
+		<nav class="body__main-nav main-nav">
+			<ul class="main-nav__list nav-list">
+				<li class="main-nav__li nav-li"><a class="main-nav__link" href="#">Ремонтируемые бренды</a></li>
+				<li class="main-nav__li nav-li"><a class="main-nav__link" href="#">Ремонтируемые устройства</a></li>
+				<li class="main-nav__li nav-li"><a class="main-nav__link" href="#">Цены на услуги</a></li>
+				<li class="main-nav__li nav-li"><a class="main-nav__link" href="#">Адреса сервисных центров</a></li>
+				<li class="main-nav__li nav-li"><a class="main-nav__link" href="#">Специальные цены</a></li>
+				<li class="main-nav__li nav-li"><a class="main-nav__link" href="#">Отзывы</a></li>
 			</ul>
 		</nav>
 
-		<div class="wrapper-1">
+		<article class="main__about-us about-us">
 
-			<div class="about-us">
-				<p class="about-us__title">
+			<div class="about-us__title">
+			   <p class="about-us__text">
 					Мы являемся авторизованным сервисным центром по ремонту техники Dell. 
 					Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
 				</p>
-				<p class="about-us__title about-us__title--hidden">
-					Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера <span class="about-us__path about-us__path--hidden">, что подтверждает 
+				<p class="about-us__text">
+					Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера <span class="about-us__path about-us__path--hidden-768">, что подтверждает 
 					большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по 
-				рекомендациям и, в свою очередь, советуют нас родным и близким.</span>
+				 	рекомендациям и, в свою очередь, советуют нас родным и близким.</span>
 				</p>
-			<div class="read-next">
-		   	<span class="read-next__item">
-		   		Читать далее
-		   	</span>
+		   	<button class="about-us__button" name="about-us__button">Читать далее</button>
+		   </div>
 
-			</div>
+			
+		 	<div class="about-us__signboard-320">
+				<img class="about-us__signboard-320-img" src="img/img_signboard-main-320.jpg" alt="Вывеска ремонтной мастерской" >
 			</div>
 
-        
-		 	<div class="signboard-320">
-				<img class="signboard__item-320" src="img/img_signboard-main-320.jpg" alt="Вывеска ремонтной мастерской" >
-			</div>
-			<div class="signboard-768">
-				<img class="signboard__item-768" src="img/img_signboard-main-768.jpg" alt="Вывеска ремонтной мастерской" >
+			<div class="about-us__signboard-768">
+				<img class="about-us__signboard-768-img" src="img/img_signboard-main-768.jpg" alt="Вывеска ремонтной мастерской" >
          </div>
-			<div class="signboard-1120">
-				<img class="signboard__item-1120" src="img/img_signboard-main-1120.jpg" alt="Вывеска ремонтной мастерской" >
+
+			<div class="about-us__signboard-1120">
+				<img class="about-us__signboard-1120-img" src="img/img_signboard-main-1120.jpg" alt="Вывеска ремонтной мастерской" >
          </div>         
 
-		</div>
+		</article>
 
-	</div>
+
 </body>
 </html>

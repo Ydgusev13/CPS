@@ -1,84 +1,49 @@
-.wrapper {
+.body {
 	display: flex;
 	flex-direction: column;
-	/*max-width: 320px;*/
 }
 
-.header {
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
+ /* HEADER */
+
+.body__header {
    padding: 18px 0px;
    border-bottom: 1px solid #D9FFF5;
 }
 
-.burger {
-
+.header {
+	display: flex;
+   justify-content: space-around;
+   align-items: center;
 }
 
-.burger__item {
-
+.button {
+ 	display: flex;
+	align-items: center; 
 }
 
-.logo {
-
-}
-
-.logo__item {
-
-}
-
-.call {
+.button--hidden-320 {
 	display: none;
 }
 
-.call__item {
-
-}
-
-.chat {
+.button--hidden-320-768 {
 	display: none;
 }
 
-.chat__item {
+.button__burger {}
+.divider {}
 
-}
-
-.profile {
-  	display: none;
-}
-
-.profile__item {
-
-}
-
-.divider {
-
-}
-
-.divider:nth-of-type(2) {
+.divider--hidden-320 {
 	display: none;
 }
 
-.divider__item {
+.divider__img {}
+.logo {}
+.logo__img {}
 
-}
 
-.repair {
+/* TITLE */
 
-}
-
-.repair__button {
-
-}
-
-.check-status {
-
-}
-
-.check-status__button {
-
-}
+.body__title {}
 
 .title {
 	display: flex;
@@ -86,7 +51,7 @@
 	background: #F8F8F8;
 }
 
-.title__item {
+.title__h1 {
 	font-family: "TT Lakes", sans-serif;
    font-size: 28px;
    line-height: 40px;
@@ -95,43 +60,57 @@
    margin-left: 16px;
 }
 
-.title__item::before {
+.title__h1::before {
 	content: url(icons/icon_highlight.svg);
 	position: absolute;
 	margin-left: -16px;
 }
 
+
+/* NAV */
+
+.body__main-nav {}
+
 .main-nav {
 	background: #F8F8F8;
 }
 
-.main-nav-ul {
-	display: flex;	
-	list-style-type: none;
+.main-nav__list {
 	padding-left: 10px;
 	margin: 6px;
+}
+
+.nav-list {
+	display: flex;	
+	list-style-type: none;
 	overflow: hidden;	
    overflow-x: scroll;
 }
 
-.main-nav-ul__item {
-	white-space: nowrap;
+.main-nav__li {
+	margin-right: 10px;
+}
+
+.nav-li {
 	font-family: "TT Lakes", sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	letter-spacing: -0.2px;
-	margin-right: 10px;
+	white-space: nowrap;
+
 }
 
-.main-nav-ul__item a {
+.main-nav__link {
 	display: inline-block;
 	padding: 8px 16px;
 	text-decoration: none;
 	color: #7E7E82;
+	border: 2px solid #F8F8F8;
 }
 
-.main-nav-ul__item a:focus,
-.main-nav-ul__item a:active {
+.main-nav__link:focus,
+.main-nav__link:active,
+.main-nav__link:hover {
 	background: #FFFFFF;
 	border: 2px solid #B8FFEC;
 	border-radius: 6px;
@@ -139,194 +118,138 @@
 }
 
 
+/* ABOUT US*/
+
+.main__about-us {
+	display: flex;
+	flex-direction: column;
+}
+
 .about-us {
   background: #F8F8F8;
   line-height: 18px;
 }
 
-.about-us__title {
+.about-us__text {
 	background: #F8F8F8;
- 	padding: 0px 16px;
 	font-family: "TT Lakes", sans-serif;
 	font-size: 14px;
    letter-spacing: 0.2px;
 	color: #1B1C21;
+	padding: 0px 16px;
 }
 
-.about-us__title--hidden {
+.about-us__text:nth-of-type(2) {
 	display: none;
 }
 
-.read-next {
-	background: #F8F8F8;
-   padding: 18px 48px;
-}
-
-.read-next__item {
+.about-us__button {
 	font-family: "TT Lakes", sans-serif;
    font-size: 16px;
    line-height: 24px;
    letter-spacing: -0.2px;
    color: #1B1C21;
+   border: none;
+   background: #F8F8F8;
+   text-align: left;
+   padding: 8px 16px;
+   width: 200px;
+   text-align: center;
+   margin-left: 15px;
+   margin-bottom: 10px;
+   border: 2px solid #F8F8F8;
 }
 
-.read-next__item::before {
-	position: absolute;
+.about-us__button:focus,
+.about-us__button:hover,
+.about-us__button:active {
+	background: #FFFFFF;
+	border: 2px solid #B8FFEC;
+	border-radius: 6px;
+	outline: none;
+}
+
+.about-us__button::before {
+   position: absolute;
 	content: url(icons/icon_two-arrows.svg);
 	margin-left: -22px;
 }
 
-.signboard-320 {
-
-}
-
-.signboard-768 {
-
-}
-
-.signboard__item-320 {
+.about-us__signboard-320-img {
 	width: 100%;
 }
 
-.signboard-768 {
+.about-us__signboard-768 {
 	display: none;
 }
 
-.signboard-1120 {
+.about-us__signboard-1120 {
 	display: none;
 }
 
-.wrapper-1 {
-	display: flex;
-	flex-direction: column;
-}
 
-.block--hidden-320-768 {
-	display: none;
-}
 
-/*media queries*/
+/* MEDIA QUERIES*/
  
 @media only screen and (min-width: 768px) and (max-width: 1119px) {
 
-	
-.signboard-320 {
-	display: none;
-}
+/* HEADER*/
 
-.signboard-768 {
-	display: block;
-	width: 50%;
-	background: #F8F8F8;
-	text-align: center;
-}
-
-.signboard__item-768 {
-	padding: 25px 16px;
-	border-radius: 35px;
-	min-width:100%;
-   min-height:100%;
-   box-sizing: border-box;
-}
-
-.signboard-1120 {
-	display: none;
-}
-
-.wrapper-1 {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-}
-
-.about-us {
-	width: 50%;
-	line-height: 20px;
-}
-
-.about-us__title {
-	margin-top: 25px;
-}
-
-
-.read-next {
-	order: 1;
-}
-
-.about-us__title--hidden {
+.button--hidden-320 {
 	display: block;
 }
 
-.call {
-	display: block;
-}
-
-.profile {
-	display: block;
-}
-
-.chat {
-	display: block;
-}
-
-.header .header-block:nth-child(3) {
+.header__logo {
  	margin-right: 37%;
-}
-	
-
+}	
 
 .divider:nth-of-type(2) {
 	display: block;
 }
 
-.about-us__path--hidden {
-	display: none;
+/* TITLE */
+
+
+/* NAV */
+
+
+/* ABOUT US */
+
+.about-us {
+	display: flex;
+	flex-direction: row;
 }
 
-.block--hidden-320-768 {
-	display: none;
+.about-us__text:nth-of-type(1) {
+	margin-top: 0px;
 }
 
-}
-
-@media only screen and (min-width: 1120px) {
-
-.wrapper {
-	width: 1120px;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.header {
-	display: none;
-}
-
-.signboard-320 {
-	display: none;
-}
-
-.signboard-1120 {
+.about-us__text:nth-of-type(2) {
 	display: block;
 }
 
-.main-nav-ul {
-	flex-wrap: wrap;
-	overflow: hidden;
-	padding-left: 25px;
+.about-us__path--hidden-768 {
+	display: none;
 }
 
-.about-us__title--hidden {
-	display: block;
+.about-us__title {
+	margin-top: 25px;
+	width: 45%;
+	line-height: 20px;
 }
 
-.signboard-1120 {
+.about-us__signboard-320 {
+	display: none;
+}
+
+.about-us__signboard-768 {
 	display: block;
-	width: 50%;
-	background: #F8F8F8;	
+	width: 55%;
+	background: #F8F8F8;
 	text-align: center;
 }
 
-.signboard__item-1120 {
+.about-us__signboard-768-img  {
 	padding: 25px 16px;
 	border-radius: 35px;
 	min-width:100%;
@@ -334,28 +257,99 @@
    box-sizing: border-box;
 }
 
-.wrapper-1 {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
+.about-us__signboard-1120 {
+	display: none;
 }
 
+
+}
+
+@media only screen and (min-width: 1120px) {
+
+.body {
+	width: 1120px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* HEADER */
+
+.header--hidden-1120 {
+	display: none;
+}
+
+
+/* TITLE */
+
+.title__h1 {
+	margin-left: 32px;
+}
+
+.title__h1::before {
+	margin-left: -31px;
+}
+
+.button--hidden-320-768 {
+	display: flex;
+}
+
+.title__button:first-of-type {
+	margin-left: auto;
+	margin-right: 30px;
+}
+
+.title__button:last-of-type {
+	margin-right: 30px;
+}
+
+.button__label {
+	font-family: "TT Lakes", sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: -0.2px;
+	font-weight: 700;
+	color: #1B1C21;
+}
+
+.button__input {
+	margin-left: 10px;
+}
+
+/* NAV */
+
+.main-nav__list {
+	padding-left: 25px;
+}
+
+.nav-list {
+	flex-wrap: wrap;
+	overflow: hidden;
+}
+
+
+/* ABOUT US */
+
 .about-us {
-	width: 50%;
-	line-height: 20px;
+	display: flex;
+	flex-direction: row;
+}
+
+.about-us__text:nth-of-type(1) {
+	margin-top: 0px;
+}
+
+.about-us__text:nth-of-type(2) {
+	display: block;
+}
+
+.about-us__path--hidden-768 {
+	display: inline;
 }
 
 .about-us__title {
+	width: 50%;
+	line-height: 20px;
 	margin-top: 25px;
-	padding-left: 34px;
-}
-
-
-.read-next {
-	order: 1;
-}
-
-.read-next__item {
 	padding-left: 15px;
 }
 
@@ -363,55 +357,26 @@
 	margin-bottom: 0px;
 }
 
-.block--hidden-320-768 {
+.about-us__signboard-320,
+.about-us__signboard-768 {
+	display: none;
+}
+
+.about-us__signboard-1120 {
 	display: block;
+	width: 50%;
+	background: #F8F8F8;	
+	text-align: center;
+	margin-right: 20px;
 }
 
-.repair {
-	display: flex;
-	align-items: center;
-	margin-left: auto;
+.about-us__signboard-1120-img {
+	padding: 25px 16px;
+	border-radius: 35px;
+	min-width:100%;
+   min-height:100%;
+   box-sizing: border-box;
 }
 
-.repair__button {
-	margin-left: 10px;
-}
-
-.check-status {
-	display: flex;
-	align-items: center;
-	margin-left: 38px;
-   margin-right: 30px;
-}
-
-.check-status__button {
-	margin-left: 10px;
-}
-
-.title__item {
-	margin-left: 32px;
-}
-
-.title__item::before {
-	margin-left: -31px;
-}
-
-.repair__text {
-	font-family: "TT Lakes", sans-serif;
-	font-size: 16px;
-	line-height: 24px;
-	letter-spacing: -0.2px;
-	font-weight: 700;
-	color: #1B1C21;
-}
-
-.check-status__text {
-	font-family: "TT Lakes", sans-serif;
-	font-size: 16px;
-	line-height: 24px;
-	letter-spacing: -0.2px;
-	font-weight: 700;
-	color: #1B1C21; 
-}
 
 }
